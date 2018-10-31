@@ -1,0 +1,19 @@
+.body{
+  width: 1024px;
+  height: 768px;
+  background-color:#7dba5b;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.loginBox{
+  width:500px;
+  height: 200px;
+}
+.btn{
+  width: 100%;
+}
+.register{
+  text-align: center;
+  font-size: 10px;
+}
