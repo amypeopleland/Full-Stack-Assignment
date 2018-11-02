@@ -1,0 +1,50 @@
+<div class = "body">
+  <div class = "lunchBox " >
+    <form class = "shadow p-3 mb-5 bg-white rounded">
+      <div ng-controller="checkCtrl">Please select the ingredients</div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Tomato"  [checked]="TomatoSelected" (change)="TomatoSelected = !TomatoSelected">
+        <label class="form-check-label" for="Tomato">Tomato</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Egg" [checked]="EggSelected" (change)="EggSelected = !EggSelected">
+        <label class="form-check-label" for="Egg">Egg</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Broccoli" [checked]="BroccoliSelected" (change)="BroccoliSelected = !BroccoliSelected">
+        <label class="form-check-label" for="Broccoli">Broccoli</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Beef" [checked]="BeefSelected" (change)="BeefSelected = !BeefSelected">
+        <label class="form-check-label" for="Beef">Beef</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Pork" [checked]="PorkSelected" (change)="PorkSelected = !PorkSelected">
+        <label class="form-check-label" for="Pork">Pork</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Pineapple" [checked]="PineappleSelected" (change)="PineappleSelected = !PineappleSelected">
+        <label class="form-check-label" for="Pineapple">Pineapple</label>
+      </div>
+      <div style="margin-top: 8px; display: flex; justify-content: flex-end">
+        <span><button type="button" class="btn btn-primary btn-sm" (click)="cook()">Submit</button></span>
+      </div>
+
+      <hr>
+      <div>
+        <span>Result: {{result}}</span>
+        <span style = "display: flex; justify-content: flex-end"><button type="button" class="btn btn-primary btn-sm" (click)="clear()" >Clear</button></span>
+      </div>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+

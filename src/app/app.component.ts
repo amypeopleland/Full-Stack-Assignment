@@ -8,3 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = '九章全栈基础课!';
 }
+//Main Load 到这里，第一个页面就走APP COMPONENT
